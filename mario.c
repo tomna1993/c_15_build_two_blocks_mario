@@ -7,21 +7,18 @@ int main(void)
 
 	for(int i = 1; i <= height; i++)
 	{
-		int j = 0;
-		
-		while (j < (height - i))
+		for(int j = 0; j < height; j++)
 		{
-			printf(" ");
-			j++;
-		} 
+			if(j < height - i)
+			{
+				printf(" ");
+			}
+			else
+			{
+				printf("#");
+			}
+		}
 
-		do
-		{
-			printf("#");
-			j++;
-
-		} while (j < height);
-		
 		printf("\n");
 	}
 }
