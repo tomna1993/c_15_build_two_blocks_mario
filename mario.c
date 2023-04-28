@@ -2,9 +2,15 @@
 #include <cs50.c>
 
 int main(void)
+<<<<<<< HEAD
 {	
 	// Prompt user for integer number
-	int height = get_int("Height: ");
+	int height; 
+	
+	do
+	{
+		height = get_int("Height: ");
+	} while (height < 1 || height > 15);
 
 	// Nested for loop;
 	// iterate trough rows
