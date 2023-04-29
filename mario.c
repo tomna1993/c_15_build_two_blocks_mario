@@ -29,8 +29,8 @@ int main(void)
 			}
 		}
 
-		// Put space between blocks
-		printf(" ");
+		// Put two space between blocks
+		printf("  ");
 
 		// iterate trough columns in second block
 		for(int j = 0; j < i; j++)
